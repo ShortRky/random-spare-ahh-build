@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Color Perception Test</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="game-container">
+        <div class="status-panel">
+            <div class="score-section">
+                <div>Score: <span id="score">0</span></div>
+                <div>Level: <span id="level">1</span></div>
+            </div>
+            <div class="time-section">
+                <div>Time: <span id="timer">30</span>s</div>
+                <div>Accuracy: <span id="accuracy">100</span>%</div>
+            </div>
+        </div>
+
+        <div class="color-arena">
+            <div class="color-grid" id="color-grid"></div>
+            <div class="color-info">
+                <div class="target-color">
+                    <span>Find this color:</span>
+                    <div id="target-color" class="color-box"></div>
+                </div>
+                <div class="color-stats">
+                    <div>RGB Difference: <span id="rgb-diff">0</span></div>
+                    <div>Hue Variance: <span id="hue-var">0</span>°</div>
+                </div>
+            </div>
+        </div>
+
+        <div class="game-hud">
+            <div class="difficulty-meter">
+                <div class="meter-label">Color Complexity</div>
+                <div class="meter-bar" id="complexity-meter"></div>
+            </div>
+            <div class="stats-panel">
+                <div>Perfect Picks: <span id="perfect-picks">0</span></div>
+                <div>Missed Shades: <span id="missed-shades">0</span></div>
+            </div>
+        </div>
+
+        <div class="challenge-info" id="challenge-info">
+            Can you spot the difference?
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
